@@ -1,33 +1,56 @@
+body {
+  background-color:rgb(65, 65, 65);
+  padding: 0px;
+  margin: 0px;
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Converter {
+  display: flex;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.choose {
+  display: flex;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-title {
+  background-color:rgb(51, 117, 153);
+  padding: 10px;
+  border-radius: 10px;
+  color: white
+}
+.secnd-title {
+  color: white
+}
+.my-input {
+  border: none;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.my-button {
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.course-table {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.2em;
 }
-
-.App-link {
-  color: #61dafb;
+.course-table__item {
+  font-size: 2em;
 }
-
+.history-table {
+  background: #000;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
