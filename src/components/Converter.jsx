@@ -6,7 +6,7 @@ function Converter() {
     const options = [{value: 'USD', name: 'ДОЛЛАР'}, {value: 'EUR', name: 'ЕВРО'}]
     const [currentCurrency, setCurrentCurrency] = useState({currency: 'USD', course: 0})
     async function getActualCurrency () {
-        await axios.get(`https://api.apilayer.com/fixer/convert?to=RUB&from=${selectedCurrency}&amount=1&apikey=H9WCSqeXlQflVzqUSaJMa3yA1vVDsHzh`)
+        await axios.get(`https://api.apilayer.com/fixer/convert?to=RUB&from=${selectedCurrency}&amount=1&apikey=A03Oz8E4HyTwgJpt2V3CMF078kxye31U`)
         .then(res => {
             setCurrentCurrency({currency:res.data.query.from, course: res.data.result})
         })
