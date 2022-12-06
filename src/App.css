@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
+
 body {
   background-color:rgb(65, 65, 65);
   padding: 0px;
   margin: 0px;
+  font-family: 'Heebo', sans-serif;
 }
 .App {
   display: flex;
@@ -12,50 +15,73 @@ body {
 .Converter {
   display: flex;
   flex-direction: column;
+  width: 370px;
 }
 .choose {
   display: flex;
   flex-direction: column;
 }
 .main-title {
-  background-color:rgb(51, 117, 153);
-  padding: 10px;
+  background-color: goldenrod;
+  padding: 10px 20px;
   border-radius: 10px;
   color: white
 }
 .secnd-title {
   color: white
 }
-.my-input {
-  border: none;
-  padding: 10px;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
+
 .my-button {
-  padding: 10px;
-  font-size: 1.2em;
+  font-size: 1.6em;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  color:rgb(65, 65, 65);
+  border: 3px solid orange;
   cursor: pointer;
+  font-family: 'Heebo', sans-serif;
+  padding: 5px;
+}
+.my-input {
+  width: 100%;
+  font-size: 1.2em;
+  background: rgb(255, 255, 255);
+  border: 3px solid goldenrod;
+  border-radius: 10px;
   margin-bottom: 10px;
+  font-family: 'Heebo', sans-serif;
+  padding: 0px;
+}
+.my-input:focus, input:focus{
+  outline: none;
 }
 .course-table {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.2em;
+}
+.calc-table  {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 .course-table__item {
   font-size: 2em;
 }
 .history-table {
   background: #000;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
